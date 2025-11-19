@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediksi Kesehatan Mental Mahasiswa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen">
+    <!-- Navigation - Sticky -->
+    <nav class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="max-w-6xl mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <h1 class="text-xl sm:text-2xl font-bold text-indigo-600">PikiranSehat</h1>
+                <div class="flex gap-2 sm:gap-3">
+                    <a href="/" class="bg-indigo-600 text-white px-3 sm:px-4 py-2 rounded-lg hover:bg-indigo-700 transition text-sm sm:text-base font-semibold">Home</a>
+                    <a href="/predict" class="bg-indigo-600 text-white px-3 sm:px-4 py-2 rounded-lg hover:bg-indigo-700 transition text-sm sm:text-base font-semibold">Prediksi</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <main class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="bg-white rounded-2xl shadow-xl p-8 md:p-12 mb-12">
+            <!-- Header -->
+            <div class="text-center mb-8">
+                <div class="flex justify-center items-center gap-3 mb-4">
+                    <span class="text-4xl">🧠</span>
+                    <h2 class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-500 to-blue-600 bg-clip-text text-transparent">
+                        PikiranSehat
+                    </h2>
+                </div>
+                <p class="text-xl text-gray-600 mb-2">Platform Prediksi Kesehatan Mental Mahasiswa</p>
+            </div>
+
+            <!-- Description -->
+            <div class="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-lg mb-8">
+                <h3 class="text-lg font-semibold text-gray-800 mb-4">Tentang PikiranSehat</h3>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    PikiranSehat adalah platform yang dirancang untuk membantu mahasiswa memahami dan memonitor kondisi kesehatan mental mereka. 
+                    Dengan menggunakan algoritma analisis data yang canggih dan akurat, kami memberikan prediksi berdasarkan berbagai faktor penting yang mempengaruhi kesejahteraan mental Anda.
+                </p>
+                <p class="text-gray-700 leading-relaxed">
+                    Kesehatan mental sama pentingnya dengan kesehatan fisik. PikiranSehat hadir sebagai langkah awal untuk meningkatkan kesadaran diri dan mengambil tindakan pencegahan dini terhadap gangguan kesehatan mental.
+                </p>
+            </div>
+
+            <!-- Key Features -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <div class="bg-gradient-to-br from-blue-500 to-blue-600 text-white p-6 rounded-xl">
+                    <div class="text-3xl mb-2">📋</div>
+                    <h3 class="text-xl font-bold mb-2">Form Lengkap</h3>
+                    <p class="text-blue-100">Formulir komprehensif mencakup semua aspek penting kesehatan mental</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-blue-500 to-blue-600 text-white p-6 rounded-xl">
+                    <div class="text-3xl mb-2">🔍</div>
+                    <h3 class="text-xl font-bold mb-2">Analisis Mendalam</h3>
+                    <p class="text-blue-100">Analisis data komprehensif untuk prediksi akurat kesehatan mental Anda</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-purple-500 to-purple-600 text-white p-6 rounded-xl">
+                    <div class="text-3xl mb-2">📊</div>
+                    <h3 class="text-xl font-bold mb-2">Hasil Detail</h3>
+                    <p class="text-purple-100">Dapatkan hasil prediksi dengan penjelasan mendalam</p>
+                </div>
+            </div>
+
+            <!-- Faktor-faktor yang Dinilai -->
+            <div class="mb-8">
+                <h3 class="text-2xl font-bold text-gray-800 mb-6">Faktor-Faktor yang Dinilai</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="flex items-start p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition">
+                        <span class="text-2xl mr-4">👤</span>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Informasi Pribadi</h4>
+                            <p class="text-gray-600 text-sm">Nama, jenis kelamin, dan usia</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition">
+                        <span class="text-2xl mr-4">📚</span>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Kehidupan Akademik</h4>
+                            <p class="text-gray-600 text-sm">Tekanan akademik, kepuasan belajar, dan jam belajar</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition">
+                        <span class="text-2xl mr-4">😴</span>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Gaya Hidup</h4>
+                            <p class="text-gray-600 text-sm">Durasi tidur dan kualitas pola makan</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition">
+                        <span class="text-2xl mr-4">❤️</span>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">Kesehatan Mental</h4>
+                            <p class="text-gray-600 text-sm">Pikiran suisidal, stres finansial, riwayat keluarga</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Button -->
+            <div class="text-center">
+                <a href="/predict" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-lg transition transform hover:scale-105 shadow-lg">
+                    Mulai Prediksi Sekarang 🚀
+                </a>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="text-center text-gray-600 py-8">
+            <p>&copy; 2025 PikiranSehat. Dibuat untuk kesadaran kesehatan mental mahasiswa.</p>
+            <p class="text-sm mt-2">Disclaimer: Aplikasi ini adalah untuk tujuan edukasi dan self-assessment. Konsultasikan dengan profesional kesehatan mental untuk diagnosis resmi.</p>
+        </footer>
+    </main>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
